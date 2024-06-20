@@ -32,7 +32,7 @@ export const getSearchSuggestions = async (keyWord) => {
   try {
     const encodedKeyword = encodeURIComponent(keyWord);
     const response = await fetchJsonp(
-      `https://suggestion.baidu.com/su?wd=${encodedKeyword}&cb=json`,
+      `https://apis.0p.pw/api/v2/baidu-suggestion/su?wd=${encodedKeyword}&cb=json`,
       {
         // 回调参数
         jsonpCallback: "cb",
